@@ -1,0 +1,109 @@
+im=imread('a.bmp');
+size(im);
+imshow(im);
+[Warning: Image is too big to fit on screen; displaying at 67%] 
+[> In <a href="matlab: opentoline('/Applications/MATLAB_R2013a.app/toolbox/images/imuitools/private/initSize.m',72,1)">imuitools/private/initSize at 72</a>
+  In <a href="matlab: opentoline('/Applications/MATLAB_R2013a.app/toolbox/images/imuitools/imshow.m',283,1)">imshow at 283</a>] 
+im1=reshape(im, prod(size(im)), 1);
+size(im1)
+
+ans =
+
+      450000           1
+
+h=hist(double(im1), [0:1:255]);
+figure
+plot(h)
+plot(h(10:255))
+th=200;
+im2=im;
+im2(im>=th)=0;
+im2(im<th)=1;
+figure
+imagesc(im2)
+colormap grey
+{Error using <a href="matlab:helpUtils.errorDocCallback('feval')" style="font-weight:bold">feval</a>
+Undefined function or variable 'grey'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('colormap', '/Applications/MATLAB_R2013a.app/toolbox/matlab/graph3d/colormap.m', 91)" style="font-weight:bold">colormap</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2013a.app/toolbox/matlab/graph3d/colormap.m',91,0)">line 91</a>)
+        arg = feval(arg);
+} 
+colormap gray
+imagesc(~im2)
+L=bwlabel(im2);
+figure
+imagesc(L)
+cd ..
+boxSize()
+D=dist2(Features, Features);
+imagesc(D)
+figure
+imagesc(D)
+figure
+imagesc(D)
+part3-4()
+ part3-4()
+        |
+{Error: Unbalanced or unexpected parenthesis or bracket.
+} 
+part3-4()
+ part3-4()
+        |
+{Error: Unbalanced or unexpected parenthesis or bracket.
+} 
+ocr()
+{Error using <a href="matlab:helpUtils.errorDocCallback('imread', '/Applications/MATLAB_R2013a.app/toolbox/matlab/imagesci/imread.m', 350)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2013a.app/toolbox/matlab/imagesci/imread.m',350,0)">line 350</a>)
+File "a.bmp" does not exist.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('ocr', '/Users/nikhilmashettiwar/Documents/MATLAB/Imaging HW 4/ocr.m', 3)" style="font-weight:bold">ocr</a> (<a href="matlab: opentoline('/Users/nikhilmashettiwar/Documents/MATLAB/Imaging HW 4/ocr.m',3,0)">line 3</a>)
+im = imread('a.bmp');
+} 
+cd ./HW3images
+ls
+ConfusionMatrix.m	moments.m		r.bmp
+a.bmp			n.bmp			test.bmp
+d.bmp			o.bmp			u.bmp
+diary2.txt		p.bmp			w.bmp
+dist2.m			part34.m
+m.bmp			q.bmp
+
+part34()
+{Undefined function or variable 'boxSize'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('part34', '/Users/nikhilmashettiwar/Documents/MATLAB/Imaging HW 4/HW3images/part34.m', 10)" style="font-weight:bold">part34</a> (<a href="matlab: opentoline('/Users/nikhilmashettiwar/Documents/MATLAB/Imaging HW 4/HW3images/part34.m',10,0)">line 10</a>)
+boxSize
+} 
+part34()
+
+recognitionRate =
+
+    0.5813
+
+
+recognitionRate =
+
+    0.2714
+
+part34()
+
+recognitionRate =
+
+    0.5813
+
+
+recognitionRate =
+
+    0.2714
+
+part4()
+
+recognitionRate =
+
+    0.2714
+
+part4()
+
+recognitionRate =
+
+    0.2714
+
